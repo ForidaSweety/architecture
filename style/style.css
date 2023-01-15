@@ -20,6 +20,7 @@ nav{
     font-size: 45px;
 }
 nav a{
+    color: #ed7b24;
     text-decoration: none;
     margin-top: 80px;
     font-weight: 500;
@@ -27,7 +28,7 @@ nav a{
     margin-right: 15px;
 }
 nav a:focus{
-    color: #ff9f0e;
+    color: #9abe24;
     font-size: 30px;
 }
 .banner{
@@ -178,6 +179,7 @@ font-size: 45px;
 }
 .contact .section-descriptions{
     margin: 0 50px; 
+    color: #727272;
 }
 .last-section{
     background-color: antiquewhite;
@@ -204,6 +206,171 @@ font-size: 45px;
 .last-part{
     background-color: antiquewhite;
     text-align: center;
-    padding: 30px;
+    padding: 30px;  
+}
+
+/*-------- media queries--------
+  -------- Mobile pnone --------*/
+@media only screen and (max-width:576px) {
+    .header, .section-one, .section-two, .section-three, .section-four, .contact, .footer{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    /* banner */
+    nav{
+        padding:20px 5px 0px;
+        margin-bottom: 50px;
+    }
+    .nav-title{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    nav a{
+        font-weight: 500;
+        font-size: 10px;
+        margin-right: 15px;
+    }
+    .banner{
+        align-items: center;
+        margin: 0px;
+        width: 300px;
+        padding-left: 3px;
+    }
+    .banner-title{
+        font-weight: 300;
+        font-size: 40px;
+        text-align: center;
+        margin-left: 50px;
     
+    }
+    .banner-description{
+        font-weight: 200;
+        font-size: 12px;
+        text-align: center;
+        color: #727272;
+        margin-left: 50px;
+    }
+    .btn-primary{
+        width: 100px;
+       border-radius: 8px;
+        margin: 30px 0px 40px;
+        margin-left: 150px;
+    }
+    /* section-one */
+    .container-one{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: left;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+        margin:0;
+    }
+    .items img{
+        width: 290px;
+        height: 342px;
+    }
+    .section-title{
+        font-weight: 500;
+    font-size: 36px;
+    }
+    .section-description{
+        font-weight: 300;
+    font-size: 12px;
+    color: #727272;
+    margin-right: 50px;
+    width: 290px;
+    }
+    /* section-two */
+
+.container-two{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: left;
+    margin-bottom: 130px;
+}
+.container-two .section-title{
+    width: 300px;
+}
+.sec-two-details{
+    margin: 0px;
+    width: 100%;
+}
+.image img{
+    width: 290px;
+    height: auto;
+}
+.box-1,.box-2,.box-3{
+    
+    padding-left: 2px;
+    width: 290px; 
+}
+ /* section-three */
+ .sec-three-section{
+    margin-left:0px;
+    width: 542px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 5px;
+    gap: 20px;
+    text-align: center;
+}
+.small-box{
+    width: 200px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+/* section-four */
+.sec-four-section{
+    text-align:left;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+/* add new section */
+.contact{
+    padding: 0px;
+    text-align: left;
+}
+.section-titlee{
+    font-weight: 300;
+font-size: 35px;
+}
+.contact .section-descriptions{
+    margin: 0px; 
+    font-weight: 300;
+    font-size: 12px;
+    width: 295px;
+}
+.last-section{
+    width: 300px;
+    padding: 8px;
+    margin:0;
+}
+.last-section input[type="email"]{
+    padding:10px 15px ;
+    margin: 20px 0 20px 0;
+}
+.btn-s-primary{
+    padding:8px 8px ;
+}
+.btn-s-primary:hover{
+    color:brown;
+    background-color:antiquewhite;
+    font-size: 15px;
+}
+/* footer */
+.last-part{
+    color: #FFFFFF;
+    background-color: black;
+    width: 300px;
+    font-size: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
 }

@@ -26,6 +26,10 @@ nav a{
     font-size: 18px;
     margin-right: 15px;
 }
+nav a:focus{
+    color: #ff9f0e;
+    font-size: 30px;
+}
 .banner{
     align-items: center;
     margin: 0px 400px;
@@ -47,6 +51,10 @@ nav a{
     height: 64px;
     background: #FF900E;border-radius: 8px;
     margin: 30px 255px 40px;
+}
+.btn-primary:hover{
+    background-color: bisque;
+    transform: rotate(3deg);
 }
 .container img{
     width: 100%;
@@ -86,6 +94,11 @@ margin-right: 50px;
     width: 180px;
     height: 64px;
     background: #FF900E;border-radius: 8px;
+}
+.btns-primary:hover{
+    color: #dd4040;
+    background-color: antiquewhite;
+    height: 60px;
 }
 a{
     text-decoration: none;
@@ -136,6 +149,9 @@ padding-left: 10px;
     border: 1px solid #FF900E;
     border-radius: 8px;
 }
+.small-box:hover{
+    background-color: antiquewhite;
+}
 /* section four */
 .sec-four-section{
     text-align: center;
@@ -170,11 +186,19 @@ font-size: 45px;
     text-decoration: none;
     margin: 20px 200px;
 }
-.last-section input[type="email"],input[type="submit"]{
+.last-section input[type="email"]{
     padding:18px 20px ;
 }
-.last-section input[type="submit"]{
-    background-color: #FF5959;
+.btn-s-primary{
+    padding:18px 20px ;
+}
+.last-section .btn-s-primary{
+    background-color: #FF900E;
+}
+.btn-s-primary:hover{
+    color:brown;
+    background-color:antiquewhite;
+    font-size: 15px;
 }
 /* footer */
 .last-part{
